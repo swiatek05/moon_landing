@@ -5,3 +5,4 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(moon_landing
         main.c)
+target_link_libraries(moon_landing m)
