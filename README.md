@@ -12,6 +12,7 @@ Symulacja lądowania lądownika księżycowego (grawitacja $g = 1.6\text{ m/s}^2
 
 ## Wymagania
 
+* **System operacyjny:** Linux (skrypt automatyzujący `run.sh` został przygotowany wyłącznie pod środowisko Linux)
 * Kompilator języka C (`gcc`)
 * Python 3 (z modułem `venv` oraz `pip`)
 
