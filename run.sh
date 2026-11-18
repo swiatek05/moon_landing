@@ -1,7 +1,11 @@
+#!/usr/bin/env bash
+set -e
+cd "$(dirname "$0")"
+
 gcc -Wall -Wextra main.c -o main -lm
-
 mkdir -p results
+./main "$@"
 
-./main
-
-python plot.py
+[ -d .venv ] || python3 -m venv .venv
+.venv/bin/pip install -q -r requirements.txt
+.venv/bin/python plot.py
